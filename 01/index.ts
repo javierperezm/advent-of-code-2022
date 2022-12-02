@@ -1,43 +1,33 @@
-const fs = require('fs')
+import loadData from '../shared/loadData'
+import type { BlockT } from '../shared/types'
 
-const input = {
-  test: 'test.txt',
-  real: 'input.txt',
-}
-
-const day1a = (filename) => {
-  const data = fs.readFileSync(`${__dirname}/${filename}`, 'utf8')
-
-  return data
+const day1a = (block: BlockT) =>
+  loadData(__dirname, block)
     .split('\n\n')
-    .map((elf) =>
+    .map((elf: string) =>
       elf
         .split('\n')
         .map((n) => parseInt(n))
         .reduce((acc, current) => acc + current)
     )
-    .sort((a, b) => b - a)[0]
-}
+    .sort((a: number, b: number) => b - a)[0]
 
-const day1b = (filename) => {
-  const data = fs.readFileSync(`${__dirname}/${filename}`, 'utf8')
-
-  return data
+const day1b = (block: BlockT) =>
+  loadData(__dirname, block)
     .split('\n\n')
-    .map((elf) =>
+    .map((elf: string) =>
       elf
         .split('\n')
         .map((n) => parseInt(n))
         .reduce((acc, current) => acc + current)
     )
-    .sort((a, b) => b - a)
+    .sort((a: number, b: number) => b - a)
     .slice(0, 3)
-    .reduce((a, b) => a + b)
-}
+    .reduce((a: number, b: number) => a + b)
 
 console.log({
-  testA: day1a(input.test),
-  realA: day1a(input.real),
-  testB: day1b(input.test),
-  realB: day1b(input.real),
+  testA: day1a('test'),
+  realA: day1a('real'),
+  testB: day1b('test'),
+  realB: day1b('real'),
 })

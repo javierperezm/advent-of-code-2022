@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "rootDir": ".",
+    },
+    "exclude": ["node_modules"]
+}
