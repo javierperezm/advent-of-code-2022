@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "01": "nodemon 01/index.ts",
-    "02": "nodemon 02/index.ts"
+    "02": "nodemon 02/index.ts",
+    "03": "nodemon 03/index.ts"
   },
   "dependencies": {},
   "devDependencies": {

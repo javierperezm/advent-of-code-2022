@@ -1,5 +1,5 @@
 import loadData from '../shared/loadData'
-import { BlockT } from '../shared/types'
+import { InputBlockE } from '../shared/types'
 
 enum game {
   rock = 'rock',
@@ -50,7 +50,7 @@ const getPoints = ([p1, p2]: game[]) => {
   return points
 }
 
-const day2a = (block: BlockT) =>
+const day2a = (block: InputBlockE) =>
   loadData(__dirname, block)
     .split('\n')
     .map((line: string) =>
@@ -58,7 +58,7 @@ const day2a = (block: BlockT) =>
     )
     .reduce((acc: number, current: number) => acc + current)
 
-const day2b = (block: BlockT) =>
+const day2b = (block: InputBlockE) =>
   loadData(__dirname, block)
     .split('\n')
     .map((line: string) => {
@@ -82,8 +82,8 @@ const day2b = (block: BlockT) =>
     .reduce((a: number, b: number) => a + b)
 
 console.log({
-  testA: day2a('test'),
-  realA: day2a('real'),
-  testB: day2b('test'),
-  realB: day2b('real'),
+  testA: day2a(InputBlockE.test),
+  realA: day2a(InputBlockE.real),
+  testB: day2b(InputBlockE.test),
+  realB: day2b(InputBlockE.real),
 })

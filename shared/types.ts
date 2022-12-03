@@ -1,1 +1,4 @@
-export type BlockT = 'test' | 'real'
+export enum InputBlockE {
+  test = 'test.txt',
+  real = 'input.txt',
+}

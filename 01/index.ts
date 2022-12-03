@@ -1,7 +1,7 @@
 import loadData from '../shared/loadData'
-import type { BlockT } from '../shared/types'
+import { InputBlockE } from '../shared/types'
 
-const day1a = (block: BlockT) =>
+const day1a = (block: InputBlockE) =>
   loadData(__dirname, block)
     .split('\n\n')
     .map((elf: string) =>
@@ -12,7 +12,7 @@ const day1a = (block: BlockT) =>
     )
     .sort((a: number, b: number) => b - a)[0]
 
-const day1b = (block: BlockT) =>
+const day1b = (block: InputBlockE) =>
   loadData(__dirname, block)
     .split('\n\n')
     .map((elf: string) =>
@@ -26,8 +26,8 @@ const day1b = (block: BlockT) =>
     .reduce((a: number, b: number) => a + b)
 
 console.log({
-  testA: day1a('test'),
-  realA: day1a('real'),
-  testB: day1b('test'),
-  realB: day1b('real'),
+  testA: day1a(InputBlockE.test),
+  realA: day1a(InputBlockE.real),
+  testB: day1b(InputBlockE.test),
+  realB: day1b(InputBlockE.real),
 })

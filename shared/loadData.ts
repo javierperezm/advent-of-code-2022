@@ -1,14 +1,6 @@
 const fs = require('fs')
 
-import { BlockT } from './types'
+import { InputBlockE } from './types'
 
-export default (directory: string, block: BlockT) =>
-  fs.readFileSync(
-    `${directory}/${
-      {
-        test: 'test.txt',
-        real: 'input.txt',
-      }[block]
-    }`,
-    'utf8'
-  )
+export default (directory: string, block: InputBlockE) =>
+  fs.readFileSync(`${directory}/${block}`, 'utf8')
