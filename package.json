@@ -9,7 +9,8 @@
   "scripts": {
     "01": "nodemon 01/index.ts",
     "02": "nodemon 02/index.ts",
-    "03": "nodemon 03/index.ts"
+    "03": "nodemon 03/index.ts",
+    "04": "nodemon 04/index.ts"
   },
   "dependencies": {},
   "devDependencies": {
