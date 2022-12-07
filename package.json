@@ -12,7 +12,8 @@
     "03": "nodemon 03/index.ts",
     "04": "nodemon 04/index.ts",
     "05": "nodemon 05/index.ts",
-    "06": "nodemon 06/index.ts"
+    "06": "nodemon 06/index.ts",
+    "07": "nodemon 07/index.ts"
   },
   "dependencies": {},
   "devDependencies": {
