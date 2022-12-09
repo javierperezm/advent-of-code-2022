@@ -1,10 +1,22 @@
 # Advent Of Code 2022
 
-## How to run
+## Setup
 
-```bash
-yarn install
-yarn [day]
-```
+`yarn install`
 
-Example: `yarn 03`
+## get the results
+`yarn [day]`
+
+`[day] = dd = 05, 09, 12, ...`
+
+## run tests
+`yarn [day]:test`
+
+## execute server
+`yarn [day]:server`
+
+## build react app
+`yarn [day]:build`
+
+## build react app and execute server
+`yarn [day]:run`

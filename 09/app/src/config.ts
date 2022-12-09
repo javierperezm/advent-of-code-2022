@@ -1,0 +1,6 @@
+const TICKER_TIME = 50
+const MATRIX_WIDTH = 150
+const MATRIX_HEIGHT = 150
+const WEBSOCKET_URL = 'ws://localhost:3333/websockets'
+
+export { TICKER_TIME, MATRIX_WIDTH, MATRIX_HEIGHT, WEBSOCKET_URL }
