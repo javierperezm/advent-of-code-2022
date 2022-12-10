@@ -20,7 +20,9 @@
     "09:test": "jest --watch 09",
     "09:server": "nodemon 09/server.ts",
     "09:build": "cd 09/app && yarn build && cd ../..",
-    "09:run": "cd 09/app && yarn build && cd ../.. && nodemon 09/server.ts"
+    "09:run": "cd 09/app && yarn build && cd ../.. && nodemon 09/server.ts",
+    "10": "ts-node 10/index.ts",
+    "10:test": "jest --watch 10"
   },
   "dependencies": {
     "express": "4.18.2",
