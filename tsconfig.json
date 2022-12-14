@@ -10,12 +10,15 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "rootDir": ".",
-        "lib": ["es2020", "esnext"]
+        "lib": ["es2020", "esnext"],
+        "sourceMap": true,
+        "outDir": "out",
+        "jsx": "react",
     },
     "include": [
         "next-env.d.ts",
         "**/*.ts",
-        "**/*.tsx"
+        "**/*.tsx",
     ],
     "exclude": [
         "node_modules"
