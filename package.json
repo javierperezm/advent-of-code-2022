@@ -27,7 +27,9 @@
     "11": "ts-node 11/index.ts",
     "11:test": "jest --watch 11",
     "12": "ts-node 12/index.ts",
-    "12:test": "jest --watch 12"
+    "12:test": "jest --watch 12",
+    "13": "ts-node 13/index.ts",
+    "13:test": "jest --watch 13"
   },
   "dependencies": {
     "express": "4.18.2",
